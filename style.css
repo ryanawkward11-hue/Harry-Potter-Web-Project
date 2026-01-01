@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('https://i.pinimg.com/736x/94/2b/6f/942b6f8bf28795b4975c87d0944cdea9.jpg') no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.harry {
+	height: 100px;
+	width: 120px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+	transform-origin: center;
+	transition: transform 0.05s linear, top 0.05s linear; /* smooth rotation */
+}
+
+.snitch {
+    position: fixed;
+    width: 100px;
+    height: 70px;
+    top: 40vh;   /* adjust vertical position */
+    left: 50vw;  /* adjust horizontal position */
+}
+
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background: url('https://www.shutterstock.com/image-illustration/seamless-cartoon-texture-dark-gray-600nw-737409754.jpg') repeat-y center;
+	background-size: contain;
+	border: 3px solid #3b2f2f;
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.7);
+	border-radius: 10px;
+}
+
+.message {
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 30%;
+	left: 50%;
+	font-size: 4em;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.messageStyle {
+    background: rgba(255, 255, 255, 0.3);;
+	border: black 2px solid;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.score_val {
+	color: gold;
+	font-weight: bold;
+}
+@media only screen and (max-width: 1080px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.harry{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
